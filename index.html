@@ -19,6 +19,7 @@
 		}
 
 		nav {
+			min-width: 515px;
 			display: block;
 			margin: auto;
 			text-align: right;
@@ -54,20 +55,60 @@
 			height: 1500px;
 			width: 100%;
 			background-image: url(./back.jpg);
+			background-attachment: fixed; 
 			background-position: center center;
 			background-size: cover;
 		}
 
-		#video{
-			 width: 560px;
-			 height: 315px;
-		}
-
+		
 		#logo {
 			float: left;
+		}
+
+		#head {
+			text-align: center;
+			font-family: 'Lobster', cursive;
+			font-size: 50px;
+			font-weight: 900;
+			position: absolute;
+			top: 50px;
+			width: 100%;
+			height: 140px;
+			background-color: rgba(240, 192, 48, 0.5);
 
 		}
 
+		#videoform{
+			position: absolute;
+			top:190px;
+			width: 100%;
+			background-color: rgba(178, 34, 34, 0.7);
+			
+		}
+
+		#video{
+			display: inline-block;
+			padding: 20px 20px 20px 63px;
+		}
+
+		#form{
+			display: inline-block;
+		}
+
+		.textbox{
+			background-color: rgba(0,0,0,0);
+			margin: 1% 7%;
+			font-size: 18px;
+			font-weight: 300;
+			padding: 10px 15px;
+			color:rgba(255, 215, 0,0.8);
+			border-width: 5px;
+			border-radius: 10px;
+			outline: 0;
+			border-right-style: inset;
+		}
+
+		
 		#scrollup {
 			position: fixed;
 			opacity: 0.4;
@@ -90,7 +131,6 @@
 		</style>
 	</head>
 	<body>
-		
 		<header>
 			<div id="logo">
 				<img alt="Logo" src="./logo.png">
@@ -101,17 +141,26 @@
 				<a href="#">Contacts</a>
 			</nav>
 		</header>
+		
+		
+		<section id="content">
+			<div id="head">
+				Бесплатный Видеокурс Игры На Гитаре <br> Для Начинающих
+			</div>
+			<div id="videoform">
+				<iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/325mx7qLCqU" frameborder="0" allowfullscreen></iframe>
+
+				<form id="form">
+					<input class="textbox" type="text" size="40" placeholder="Ваше имя"> <br>
+					<input class="textbox" type="text" size="40" placeholder="Ваш email">
+
+				</form>
+			</div>
+		</section>
 
 		<div id="scrollup">
 			<img alt="Up" src="./up.png">
 		</div>
-		
-		<section id="content">
-			<iframe wiegth="560" height="315" src="https://www.youtube.com/embed/325mx7qLCqU" frameborder="1px" allowfullscreen>
-				
-			</iframe>
-		
-		</section>
 
 		<footer></footer>
 		<script type='text/javascript' src='./scrollup.js'></script>
