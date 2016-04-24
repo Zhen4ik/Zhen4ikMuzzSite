@@ -15,7 +15,7 @@
 			z-index: 10;
 			position: fixed;
 			height: 50px;
-			background-color: rgba(32,144,224,0.2);
+			background-color: rgba(125, 38, 205,0.7);
 			width: 100%;
 		}
 
@@ -83,7 +83,7 @@
 			position: absolute;
 			top:190px;
 			width: 100%;
-			background-color: rgba(178, 34, 34, 0.7);
+			background-color: rgba(110, 139, 61, 0.4);
 			
 		}
 
@@ -95,10 +95,21 @@
 
 		#form{
 			display: inline-block;
+			float: left;
+		}
+
+		#getit{
+			font-weight: 900;
+			font-size: 31px;
+			font-family: HNM;
+			text-align: center;
+			padding-left: 20px;
+			margin: 3% 0;
+			color: #FFFAFA;
 		}
 
 		.textbox{
-			background-color: rgba(0,0,0,0);
+			background-color: rgba(5,5,5,0.5);
 			margin: 1% 7%;
 			font-size: 18px;
 			font-weight: 300;
@@ -108,8 +119,52 @@
 			border-radius: 10px;
 			outline: 0;
 			border-right-style: inset;
+			text-align: center;
 		}
 
+		.formlabel{
+			font-family: HNM;
+			font-size: 24px;
+			font-weight: 900;
+			color: #FFFFE0;
+		}
+
+		#formbutton{
+			background-color: rgba(51, 121, 160, 0.7);
+			text-align: center;
+			height: 70px;
+			width: 439px;
+			margin: 0 7%;
+			padding: 10px 15px; 	
+			border-radius: 30px;
+			border: medium none;
+			box-shadow: 0px -8px 0px -1px #296180 inset;
+		    padding: 10px 50px;
+		    font-family: arial;
+		    font-size: 24px;
+			font-weight: 900;
+			color: white;
+			outline: none;
+		}
+
+		#formbutton:hover{
+			box-shadow: 0 0 0 0;
+			margin-top: 8px;
+			height: 62px;
+			cursor: pointer;
+		}
+
+		#formarrow{
+			display: inline-block;
+			float: left;
+			background-image: url(./formarrow.png);
+			height: 364px;
+			width: 270px;
+			-webkit-transition: all 2s;
+			-moz-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+		}
 		
 		#scrollup {
 			position: fixed;
@@ -150,13 +205,20 @@
 				Бесплатный Видеокурс Игры На Гитаре <br> Для Начинающих
 			</div>
 			<div id="videoform">
-				<iframe id="video" width="80%" height="360" src="https://www.youtube.com/embed/325mx7qLCqU" frameborder="0" allowfullscreen></iframe>
+				<iframe id="video" width="40%" height="360" src="https://www.youtube.com/embed/325mx7qLCqU" frameborder="0" allowfullscreen></iframe>
 
 				<form id="form">
-					<input class="textbox" type="text" size="40" placeholder="Ваше имя"> <br>
-					<input class="textbox" type="text" size="40" placeholder="Ваш email">
-
+					<p id="getit">Получи доступ прямo сейчас</p>
+					<label class="formlabel">Ваше имя</label><br>
+					<input class="textbox" type="text" size="40" placeholder="Иван"> <br>
+					<label class="formlabel">Ваш e-mail</label><br>
+					<input class="textbox" type="text" size="40" placeholder="ivanov@ivan.com"><br>
+					<label class="formlabel">Нажми</label><br>
+					<input id="formbutton" type="submit" value="Получить доступ">
 				</form>
+				<div id="formarrow">
+					
+				</div>
 			</div>
 		</section>
 
